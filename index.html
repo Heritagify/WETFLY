@@ -6,36 +6,43 @@
     <title>WEFLY</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="bg-slate-400">
-    <nav class="container mx-6 flex justify-between static">
+<body class="">
+    <nav class=" mx-6 flex justify-between static">
 
         <div class="font-bold font-[inter] text-3xl leading-loose text-[#FF4500]">we<span class="text-blue-900 italic">fly</span></div>
 
-        <div class="uppercase flex justify-between gap-6 font-semibold text-sm">
-            <ul class="flex items-center ">
-                <li class="p-4 text-[#FF4500] cursor-pointer">Home</li>
-                <li class="p-4 cursor-pointer">Service</li>
-                <li class="p-4 cursor-pointer">Tours</li>
-                <li class="p-4 cursor-pointer">Ways</li>
-                <li class="p-4 cursor-pointer">About</li>
-                <li class="p-4 cursor-pointer">Location</li>
+        <div class="flex md:hidden items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="open" class="w-8 h-8 cursor-pointer text-gray-900">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+        <div class="hidden uppercase md:flex justify-between gap-6 font-semibold text-sm">
+            <ul class="md:flex items-center ">
+                <li class="p-2 md:p-4 text-[#FF4500] cursor-pointer">Home</li>
+                <li class="p-2 md:p-4 cursor-pointer">Service</li>
+                <li class="p-2 md:p-4 cursor-pointer">Tours</li>
+                <li class="p-2 md:p-4 cursor-pointer">Ways</li>
+                <li class="p-2 md:p-4 cursor-pointer">About</li>
+                <li class="p-2 md:p-4 cursor-pointer">Location</li>
             </ul>
             <div class="flex items-center">
                 <button class="w-20 py-2 rounded-md bg-[#FF4500] text-white cursor-pointer">SIGN UP</button>
             </div>
         </div>
+          
     </nav>
 
     <div class="relative">
-        <button class="absolute left-[75rem] top-[29rem] w-28 py-2 rounded-md bg-[#FF4500] text-white cursor-pointer">Learn More</button>
+        <button class="absolute left-[21rem] top-[16rem] md:left-[75rem] md:top-[29rem] w-20 md:w-28 py-2 rounded-md bg-[#FF4500] text-white text-sm cursor-pointer">Learn More</button>
         <img class="h-[50vh] md:h-[85vh] w-full object-cover object-center px-2" src="./images/heroSection_img.png" alt="">
     </div>
 
     <div class="flex justify-center p-10">
-        <h1 class="text-4xl font-bold">OUR TOUR</h1>
+        <h1 class="text-2xl md:text-4xl font-bold">OUR TOUR</h1>
     </div>
-    <div class="sm:block md:flex lg:justify-evenly">
-        <div class="w-72 h-[500px] rounded-lg shadow-sm shadow-slate-500 mb-12">
+
+    <div class="md:flex px-7 sm:px-16 lg:justify-evenly border-4 border-red-600">
+        <div class="md:w-72 h-[500px] rounded-lg shadow-md shadow-slate-500 mb-12">
             <img src="./images/United_arab1.png" alt="United Arab" class="h-1/2 w-full">
             <div class="h-1/2 p-2">
                 <h5 class="p-1 text-lg font-bold text-center text-blue-600">BEST HOTELS</h5>
@@ -50,7 +57,7 @@
             </div>
         </div>
 
-        <div class="w-72 h-[500px] mb-12 rounded-lg shadow-sm shadow-slate-500">
+        <div class="md:w-72 h-[500px] mb-12 rounded-lg shadow-sm shadow-slate-500">
             <img src="./images/Maldives.png" alt="Maldives" class="h-1/2 w-full">
             <div class="h-1/2 p-2">
                 <h5 class="p-1 text-lg font-bold text-center text-blue-600">BEST RELAXATION CENTER</h5>
@@ -64,7 +71,7 @@
             </div>
         </div>
 
-        <div class="w-72 h-[500px] rounded-md shadow-sm shadow-slate-500">
+        <div class="md:w-72 h-[500px] rounded-md shadow-sm shadow-slate-500 border-4 border-red-600">
             <img src="./images/norway.png" alt="Norway" class="h-1/2 w-full">
             <div class="h-1/2 p-2">
                 <h5 class="p-1 text-lg font-bold text-center text-blue-600">BEST MOUNTAINS</h5>
@@ -78,8 +85,8 @@
             </div>
         </div>
     </div>
-    <div class="flex justify-center">
-        <button class="w-44 text-center flex justify-between p-2 text-white bg-orange-600 rounded-lg ">
+    <div class="pt-7 flex justify-center">
+        <button class="w-32 md:w-44 text-center flex justify-between p-2 text-white bg-orange-600 rounded-lg ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-400">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
             </svg>
@@ -91,7 +98,7 @@
           </button>
     </div>
     <div class="flex justify-center pt-16 pb-7">
-        <h1 class="text-4xl font-extrabold">OUR BEACHES</h1>
+        <h1 class="text-2xl md:text-4xl font-extrabold">OUR BEACHES</h1>
     </div>
     <div class="flex justify-center gap-6">
         <img src="./images/beach1.png" alt="cloudy and serene beach" class="w-72 h-60">
@@ -99,8 +106,8 @@
         <img src="./images/beach3.png" alt="beach with crowd" class="w-72 h-60">
     </div>
     <div class="flex justify-center py-8 gap-8">
-        <button class="w-32 bg-[#24A0ED] p-2 text-xs text-slate-100 rounded-md">LEARN MORE</button>
-        <button class="w-32 bg-orange-600 p-2 text-xs text-slate-100 rounded-md">CHECK REVIEWS</button>
+        <button class="md:w-32 bg-orange-600 p-2 text-xs text-slate-100 rounded-md">CHECK REVIEWS</button>
+        <button class="md:w-32 bg-[#24A0ED] p-2 text-xs text-slate-100 rounded-md">LEARN MORE</button>
     </div>
 
     <div class="flex mx-2" style="background-image: url('/images/singapore.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
@@ -215,16 +222,16 @@
         </div>
     </div>
 
-    <footer class="mt-36 border-8">
-    <div class="flex">
-        <div class="border font-bold font-[inter] text-3xl tracking-wide text-[#FF4500]">we<span class="text-blue-900 italic">fly</span></div>
-        <div class="flex justify-between border-4 border-yellow-400">
-            <div>
+    <footer class="mt-10 md:mt-36 shadow-md shadow-black border-8 border-yellow-500">
+    <div class="flex gap-5">
+        <div class="px-5 md:px-20 py-10 font-bold font-[inter] text-5xl md:text-3xl tracking-wide text-[#FF4500]">we<span class="text-blue-900 italic">fly</span></div>
+        <div class="md:flex w-full pt-5 justify-evenly">
+            <div class="mb-5">
                 <p class="text-base font-bold">COMPANY</p>
                 <p class="">ABOUT US</p>
                 <p class="">MOBILE</p>
             </div>
-            <div>
+            <div class="mb-3">
                 <p class="text-base font-bold">CONTACT US</p>
                 <p class="">HELP</p>
                 <p class="">FAQ</p>
@@ -239,7 +246,7 @@
         </div>
     </div>
 
-        <div>
+        <div class="text-center pt-5 text-xs md:text-md">
             <p>COPYRIGHT BY WEFLY TRAVEL TOUR</p>
             <p>ALL RIGHT RESERVED 2023</P>
         </div>
